@@ -192,30 +192,30 @@ section{padding:72px 0}
 }
 .link svg{width:16px;height:16px}
 
-/* Contact */
-.contact{
-  background:linear-gradient(180deg, #fff, #f6f8fb);
-  border-top:1px solid rgba(10,29,55,.06);
+/* Contact Info */
+.contact-info {
+  background: #fff;
+  border: 1px solid rgba(10,29,55,.08);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 12px 24px rgba(10,29,55,.06);
 }
-form{
-  background:#fff; border:1px solid rgba(10,29,55,.08); border-radius:var(--radius);
-  padding:20px; box-shadow:0 16px 32px rgba(10,29,55,.06)
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--navy-900);
 }
-.field{display:grid; gap:6px; margin-bottom:14px}
-label{font-weight:700; color:var(--navy-900)}
-input, textarea{
-  border:1px solid rgba(10,29,55,.15); border-radius:10px; padding:12px 12px;
-  font:inherit; background:#fff;
-  transition:border-color var(--speed) var(--easing), box-shadow var(--speed) var(--easing)
+
+.contact-info a {
+  color: var(--royal-600);
+  font-weight: 600;
+  transition: color var(--speed) var(--easing);
 }
-input:focus, textarea:focus{outline:none; border-color:var(--royal-600); box-shadow:0 0 0 3px rgba(30,58,138,.12)}
-.form-row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-.submit{
-  background:linear-gradient(180deg, var(--navy-700), var(--navy-900));
-  color:#fff; border:none; border-radius:12px; padding:12px 18px; font-weight:800; cursor:pointer;
-  box-shadow:var(--shadow);
+
+.contact-info a:hover {
+  color: var(--gold);
 }
-.submit:hover{transform:translateY(-1px)}
 
 /* Footer */
 footer{
